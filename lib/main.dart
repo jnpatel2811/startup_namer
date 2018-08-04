@@ -28,7 +28,7 @@ class RandomWordsState extends State<RandomWordsWidget> {
           new IconButton(icon: const Icon(Icons.list), onPressed: _pushSaved)
         ],
       ),
-      body: _buildSuggestions(),
+      body: new Scrollbar(child: _buildSuggestions()),
     );
   }
 
